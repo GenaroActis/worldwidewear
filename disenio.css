@@ -228,8 +228,9 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	}
 	.p3 {
 		display: grid;
-		width: 90vw;
-		height: 15vh;
+		width: 100vw;
+		grid-area: p3;
+		height: 100px;
 		position: relative;
 		font-size: 50px;
 		font-family: helvetica;
@@ -333,18 +334,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	.ropajecel {
 		display: none;
 	}
-	@keyframes Animacioncel {
-		0% {
-			animation-timing-function: ease-in;
-			opacity: 0;
-			transform: translateY(-45px);
-		}
-		100% {
-			animation-timing-function: ease-out;
-			opacity: 1;
-			transform: translateY(0px);
-		}
-	}
+	
 	@media screen and (max-width: 1023px){
 		
 		.www {
@@ -418,11 +408,16 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			animation: Animacion 3.5s ease 0s 1 normal forwards;
 		}
 		.p3 {
-			font-size: 30px;
+			font-size: 25px;
 		}
 		.imgRopa {
 			width: 350px;
 			height: auto;
+		}
+		.imgMenu{ 
+			display:grid;
+			width: 170px;
+			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		.ropa4 {
 			width: 350px;
@@ -433,7 +428,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			height: auto;
 		}
 		.comprar {
-			width: 330px;
+			width: 340px;
 			height: auto;
 		}
 		.wwwcel2{
