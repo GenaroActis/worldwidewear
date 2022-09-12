@@ -367,16 +367,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			width: 100vw;
 			height: auto;
 		}
-		.imgMenu{ width: 200px;
-			animation: Animacioncel 0.5s ease 0s 1 normal forwards;
-		}
-		.ul2 {
-			display:grid;
-		}
-		#nav:hover .ul2{
-			display: grid;
-			animation: Animacioncel;
-			}
+		
 		.logo {
 			width: 100vw;
 			height: auto;
