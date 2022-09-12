@@ -1,0 +1,460 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	overflow-x: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: auto;
+	height: 100vw;
+	animation: Animacion 1s ease 0s 1 normal forwards;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.hidden{
+	display:none
+}
+/* fin del reset */
+
+#index {
+	display: grid; 
+	overflow-x: hidden;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: auto; 
+	gap: 0px 0px; 
+	width: 100vw;
+	height: auto;
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"logo logo logo"
+		"footerPadre footerPadre footerPadre"
+}
+#header { grid-area: header; 
+width: 100vw;
+height: auto;}
+#nav { grid-area: nav; }
+.logo { grid-area: logo; }
+.footerPadre {grid-area: footerPadre;}
+
+.www {
+	display:grid;
+	width: 100vw;
+}
+.ul2 {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin: 5px;
+}
+
+#nav:hover .ul2{
+display: grid;
+animation: Animacion 2s ease 0s 1 normal forwards;
+}
+
+.imgMenu{
+	width: 200px;
+	margin: 0%;
+}
+@keyframes Animacion {
+	100% {
+		opacity: 1;
+	}
+
+	0% {
+		opacity: 0;
+	}
+}
+.logo{
+	display:grid;
+	align-items: center;
+	width: auto;
+	height: 80vh;
+}
+.footerPadre {
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: auto; 
+	align-items: center;
+	align-content: center;
+	gap: 0px 0px; 
+	height: auto;
+	width: 100vw;
+	align-items: center;
+	grid-template-areas: 
+	"footer footer footer"
+	"iframe iframe iframe"
+	"footer2 footer2 footer2"; 
+}
+.footer { grid-area: footer; 
+	width: 100vw;
+	height: auto;
+}
+#iframe { grid-area: iframe;
+	width: 99vw;
+	height: 40vw;
+	position: relative;
+}
+.footer2 { grid-area: footer2; 
+	width: 100vw;
+	align-items: center;
+}
+.wwwCel {
+	display: none;
+}
+#productos {
+	width: 100vw;
+	height: auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr ; 
+	grid-template-rows: auto; 
+	gap: 0px 0px 0px 10px; 
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"div1 div1 div1"
+		"footer footer footer"; 
+	}
+	.header { grid-area: header; }
+	.nav { grid-area: nav; }
+	.footerpadre { grid-area: footer; 
+		width: 100vw;
+		height: auto;}
+	#div1 {
+		display: grid; 
+		height: auto;
+		width: 100vw;
+		grid-template-columns: repeat(auto-fill, minmax(600px, auto));
+		grid-auto-rows: auto; 
+		gap: 0px 40px; 
+		grid-area: div1; 
+		justify-content: center;
+		justify-items: center;
+	}
+	.imgRopa {
+		display:grid;
+		height: 800px;
+		width:auto;
+		
+	}
+	.p1 {
+		position: relative;
+		font-size: 1.8vw;
+		font-family: fantasy;
+		text-align: center;
+		-webkit-text-stroke: 0px;
+		font-style: oblique;
+		text-shadow: 0px -4px rgb(0, 0, 0);
+		color: rgb(255, 217, 0);
+	}
+	
+	#nosotros {
+		width: 100vw;
+		height: auto;
+		overflow-x: hidden;
+		display: grid; 
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-auto-rows: auto;
+		gap: 10px 20px; 
+		grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"p2 p2 p2"
+		"p3 p3 p3"
+		"footer footer footer"; 
+	}
+	.main{
+		display: grid;
+		width: 100vw;
+		height: 10vh;
+		position: relative;
+		grid-area: p3;
+	}
+	.p2 {
+		display: grid;
+		position: relative;
+		width: 100vw;
+		height: auto;
+		grid-area: p2;
+		font-size: 40px;
+		font-family: fantasy;
+		text-align: center;
+		-webkit-text-stroke: 0px;
+		font-style: oblique;
+		text-shadow: 0px -4px rgb(0, 0, 0);
+		color: rgb(255, 217, 0);
+		justify-content: center;
+		justify-items: center;
+	}
+	.p3 {
+		display: grid;
+		width: 100vw;
+		height: 12vh;
+		position: relative;
+		font-size: 50px;
+		font-family: fantasy;
+		text-align: center;
+		-webkit-text-stroke: 0px;
+		font-style: oblique;
+		text-shadow: 0px -4px rgb(0, 0, 0);
+		color: rgb(255, 217, 0);
+		overflow-x: hidden;
+	}
+	.porQue {
+		margin: 0% 0% 1% 0%;
+		overflow-y: hidden;
+		display: grid;
+		width: 90vw;
+		height: auto;
+		justify-content: center;
+		justify-items: center;
+	}
+	.ropaje {
+		width: 100vw;
+		height: auto;
+		display: grid;
+	}
+	#ropa {
+		display: grid; 
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: auto; 
+		gap: 0px 0px;
+		width: 100vw;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		-ms-grid-column-align: center; 
+		grid-template-areas: 
+		"header header"
+		"nav nav"
+		"article article"
+		"footer footer"; 
+	}
+	.header { grid-area: header; }
+	.nav { grid-area: nav; }
+	.aside { grid-area: aside; }
+	.article {
+		display: grid; 
+		grid-template-columns: repeat( auto-fit, minmax(37.5rem, auto));
+		grid-auto-rows: auto; 
+		width: 100vw;
+		height: auto;
+		-ms-grid-column-align: center;
+		gap: 10px 10px; 
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+		grid-area: article; 
+		margin: 10px 10px;
+	}
+	.footer {grid-area: footer;
+	margin: 1vw 0vw 0vw 0vw;}
+	.ropa4 {
+		width: 600px;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+	}
+	.div3 {
+		justify-content: center;
+		align-items: center;
+		display: grid;
+		gap: 20px;
+	}
+	.backgroundcel {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+
+		/* media */
+	.wwwcel {
+		display: none;
+		width: 100vw;
+		height:auto;
+	}
+	.footer2Cel2 {
+		display:none;
+	}
+	.footerCel2 {
+		display:none;
+	}
+	.wwwcel2 {
+		display: none;
+		width: 100vw;
+		height:auto;
+	}
+	.footerCel{
+		display: none;
+	}
+	.footer2Cel{
+		display: none;
+	}
+	.ropajecel {
+		display: none;
+	}
+	@keyframes Animacioncel {
+		0% {
+			animation-timing-function: ease-in;
+			opacity: 0;
+			transform: translateY(-45px);
+		}
+		100% {
+			animation-timing-function: ease-out;
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+	@media screen and (max-width: 1023px){
+		
+		.www {
+			display: none;
+		}
+		.footer {
+			display: none;
+		}
+		.footer2 {
+			display: none;
+		}
+		.ropaje {
+			display: none;
+		}
+		/* none */
+		.wwwcel {
+			display: grid;
+		}
+		.wwwCel {
+			display: grid;
+			width: 100vw;
+			height: auto;
+		}
+		.imgMenu{ width: 200px;
+			animation: Animacioncel 0.5s ease 0s 1 normal forwards;
+		}
+		.ul2 {
+			display:grid;
+		}
+		#nav:hover .ul2{
+			display: grid;
+			animation: Animacioncel;
+			}
+		.logo {
+			width: 100vw;
+			height: auto;
+		}
+		.ropajecel {
+			width: 100vw;
+			height: auto;
+			display: grid;
+		}
+		.footerCel { 
+			display: grid;
+			grid-area: footer; 
+			width: 100vw;
+			height: auto;
+		}
+		.footer2Cel { 
+			display: grid;
+			grid-area: footer2; 
+			width: 100vw;
+			align-items: center;
+		}
+		.p2 {
+			font-size: 30px;
+		}
+		.p3 {
+			font-size: 40px;
+		}
+	}
+	/* media cel */
+	@media screen and (max-width: 767px){
+		.p2 {
+			font-size: 20px;
+		}
+		.imgMenu{ width: 170px;
+			animation: Animacioncel 0.5s ease 0s 1 normal forwards;
+		}
+		.p3 {
+			font-size: 35px;
+		}
+		.imgRopa {
+			width: 400px;
+			height: auto;
+		}
+		.ropa4 {
+			width: 450px;
+			height: auto;
+		}
+		.backgroundcel {
+			width: 350px;
+			height: auto;
+		}
+		.comprar {
+			width: 350px;
+			height: auto;
+		}
+		.wwwcel2{
+			width: 100vw;
+			display: grid;
+			height: auto;
+		}
+		.wwwcel{
+			display:none;
+		}
+		.footerCel{
+			display: none;
+		}
+		.footerCel2 {
+			display:grid;
+			width: 100vw;
+			height: auto;
+		}
+		.footer2Cel{
+			display:none;
+		}
+		.footer2Cel2 {
+			display: grid;
+			width: 100vw;
+			height: auto;
+			grid-area: footer2;
+		}
+	}
