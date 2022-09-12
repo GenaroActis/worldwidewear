@@ -226,6 +226,10 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		justify-content: center;
 		justify-items: center;
 	}
+	#mentirita {
+		width: 100vw;
+		height: 100vh;
+	}
 	.p3 {
 		display: grid;
 		width: 100vw;
