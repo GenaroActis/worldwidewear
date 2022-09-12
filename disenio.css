@@ -228,8 +228,8 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	}
 	.p3 {
 		display: grid;
-		width: 100vw;
-		height: 12vh;
+		width: 90vw;
+		height: 15vh;
 		position: relative;
 		font-size: 50px;
 		font-family: helvetica;
@@ -418,7 +418,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			animation: Animacion 3.5s ease 0s 1 normal forwards;
 		}
 		.p3 {
-			font-size: 35px;
+			font-size: 30px;
 		}
 		.imgRopa {
 			width: 350px;
