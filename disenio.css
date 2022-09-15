@@ -91,7 +91,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 
 .imgMenu{
 	width: 200px;
-	margin: 0%;
+	margin: 1%;
 }
 @keyframes Animacion {
 	100% {
