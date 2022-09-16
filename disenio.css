@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	overflow-x: hidden;
+	
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -84,7 +85,7 @@ padding: 0%;}
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	margin: 5px;
+	margin: 5px 0px;
 	padding: 0%;
 }
 #nav1 {
@@ -190,11 +191,12 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			--bs-gutter-x: 1.5rem;
 			--bs-gutter-y: 0;
 			width: 100%;
-			/* padding-right: calc(var(--bs-gutter-x) * .5); */
-			/* padding-left: calc(var(--bs-gutter-x) * .5); */
+			padding-right: 0%;
+			padding-left: 0%;
 			margin-right: auto;
 			margin-left: auto;
 	}
+	
 	.porQue {
 		padding: 0% 10%;
 		display: grid;
@@ -293,7 +295,6 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		height:auto;
 		padding: 0%;
 	}
-	
 		/* media */
 	.wwwcel {
 		display: none;
