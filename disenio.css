@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	
 	line-height: 1;
 	width: auto;
 	height: 100vw;
@@ -68,7 +69,8 @@ table {
 }
 #header { grid-area: header; 
 width: 100vw;
-height: auto;}
+height: auto;
+padding: 0%;}
 #nav { grid-area: nav; }
 .logo { grid-area: logo; }
 .footerPadre {grid-area: footerPadre;}
@@ -87,6 +89,9 @@ height: auto;}
 }
 #nav1 {
 	padding: 0%;
+}
+.element-style{
+	padding: 0%
 }
 
 #nav:hover .ul2{
@@ -179,47 +184,43 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		width:auto;
 		
 	}
-	.p1 {
-		position: relative;
-		font-size: 1.8vw;
-		font-family: fantasy;
-		text-align: center;
-		-webkit-text-stroke: 0px;
-		font-style: oblique;
-		text-shadow: 0px -4px rgb(0, 0, 0);
-		color: rgb(255, 217, 0);
-	}
 	#nosotros {
 		width: 100vw;
-		height: auto;
-		overflow-x: hidden;
-		display: grid; 
-		justify-content: center;
-		justify-items: center;
-		grid-template-columns: 1fr 1fr 1fr; 
-		grid-auto-rows: auto;
-		gap: 5vw 0vw; 
-		grid-template-areas: 
-		"header header header"
-		"nav nav nav"
-		"p2 p2 p2"
-		"p3 p3 p3"
-		"footer footer footer"; 
+		height:auto ;
+			--bs-gutter-x: 1.5rem;
+			--bs-gutter-y: 0;
+			width: 100%;
+			/* padding-right: calc(var(--bs-gutter-x) * .5); */
+			/* padding-left: calc(var(--bs-gutter-x) * .5); */
+			margin-right: auto;
+			margin-left: auto;
 	}
-	.main{
-		display: grid;
-		width: 100vw;
-		height: auto;
-		position: relative;
-		grid-area: p3;
-	}
-	.p2 {
+	.porQue {
+		padding: 0% 10%;
 		display: grid;
 		position: relative;
 		width: 100vw;
 		height: auto;
 		grid-area: p2;
-		font-size: 60px;
+		font-size: 40px;
+		font-family: Haettenschweiler;
+		text-align: center;
+		font-style: oblique;
+		-webkit-text-stroke: 0px;
+		font-style: oblique;
+		text-shadow: 0px 4px rgba(255, 238, 0, 0.322);
+		color:  rgb(255, 238, 0);
+		justify-content: center;
+		justify-items: center;
+	}
+	.main {
+		padding: 0% 0%;
+		display: grid;
+		position: relative;
+		width: 100vw;
+		height: auto;
+		grid-area: p2;
+		font-size: 40px;
 		font-family: Haettenschweiler;
 		text-align: center;
 		font-style: oblique;
@@ -233,35 +234,6 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	#mentirita {
 		width: 100vw;
 		height: 100vh;
-	}
-	.p3 {
-		display: grid;
-		width: 100vw;
-		grid-area: p3;
-		height: auto;
-		position: relative;
-		font-size: 70px;
-		font-family: Haettenschweiler;
-		text-align: center;
-		-webkit-text-stroke: 0.5px;
-		font-style: oblique;
-		text-shadow: 0px 4px rgba(255, 238, 0, 0.322);
-		color: rgb(255, 238, 0);
-		overflow-x: hidden;
-	}
-	.porQue {
-		margin: 0% 0% 1% 0%;
-		overflow-y: hidden;
-		display: grid;
-		width: 90vw;
-		height: auto;
-		justify-content: center;
-		justify-items: center;
-	}
-	.ropaje {
-		width: 100vw;
-		height: auto;
-		display: grid;
 	}
 	#ropa {
 		display: grid; 
@@ -315,6 +287,11 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		display: grid;
 		justify-content: center;
 		align-items: center;
+	}
+	.ropaje{
+		width:100vw;
+		height:auto;
+		padding: 0%;
 	}
 	
 		/* media */
@@ -468,3 +445,4 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			grid-area: footer2;
 		}
 	}
+	
