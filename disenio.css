@@ -20,6 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	overflow-x: hidden;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -82,6 +83,10 @@ height: auto;}
 	align-items: center;
 	width: 100vw;
 	margin: 5px;
+	padding: 0%;
+}
+#nav1 {
+	padding: 0%;
 }
 
 #nav:hover .ul2{
@@ -292,9 +297,10 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		grid-area: article; 
 		margin: 10px 10px;
 	}
+	
 	.footer {grid-area: footer;
 	margin: 1vw 0vw 0vw 0vw;}
-	.ropa4 {
+	#carouselExampleDark {
 		width: 600px;
 		justify-content: center;
 		align-items: center;
@@ -311,7 +317,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		justify-content: center;
 		align-items: center;
 	}
-
+	
 		/* media */
 	.wwwcel {
 		display: none;
@@ -425,7 +431,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			width: 170px;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
-		.ropa4 {
+		#carouselExampleDark {
 			width: 350px;
 			height: auto;
 		}
