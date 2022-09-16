@@ -119,6 +119,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	width: auto;
 	height: 80vh;
 }
+
 .footerPadre {
 	display: grid; 
 	grid-template-columns: 1fr 1fr 1fr; 
@@ -161,10 +162,15 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"header header header"
 		"nav nav nav"
 		"div1 div1 div1"
+		"navPag navPag navPag "
 		"footer footer footer"; 
 	}
 	.header { grid-area: header; }
 	.nav { grid-area: nav; }
+	.navPag {
+		position: absolute;
+		display: grid;
+		grid-area: navPag ;}
 	.footerpadre { grid-area: footer; 
 		width: 100vw;
 		height: auto;}
