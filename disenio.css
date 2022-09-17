@@ -162,15 +162,10 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"header header header"
 		"nav nav nav"
 		"div1 div1 div1"
-		"navPag navPag navPag "
 		"footer footer footer"; 
 	}
 	.header { grid-area: header; }
 	.nav { grid-area: nav; }
-	.navPag {
-		position: absolute;
-		display: grid;
-		grid-area: navPag ;}
 	.footerpadre { grid-area: footer; 
 		width: 100vw;
 		height: auto;}
@@ -194,47 +189,45 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	#nosotros {
 		width: 100vw;
 		height:auto ;
-			--bs-gutter-x: 1.5rem;
-			--bs-gutter-y: 0;
-			width: 100%;
-			padding-right: 0%;
-			padding-left: 0%;
-			margin-right: auto;
-			margin-left: auto;
 	}
-	
+	.row-padding{
+		height: auto;
+		width: 100vw;
+	}
 	.porQue {
-		padding: 0% 10%;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		display: grid;
 		position: relative;
-		width: 100vw;
+		width: 90vw;
 		height: auto;
 		grid-area: p2;
-		font-size: 40px;
-		font-family: Haettenschweiler;
+		font-size: 30px;
+		font-family: monospace;
 		text-align: center;
 		font-style: oblique;
 		-webkit-text-stroke: 0px;
 		font-style: oblique;
-		text-shadow: 0px 4px rgba(255, 238, 0, 0.322);
+		text-shadow: 0px 2px rgba(255, 238, 0, 0.322);
 		color:  rgb(255, 238, 0);
 		justify-content: center;
 		justify-items: center;
 	}
 	.main {
-		padding: 0% 0%;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		display: grid;
 		position: relative;
-		width: 100vw;
+		width: 90vw;
 		height: auto;
 		grid-area: p2;
 		font-size: 40px;
-		font-family: Haettenschweiler;
+		font-family: monospace;
 		text-align: center;
 		font-style: oblique;
 		-webkit-text-stroke: 0px;
 		font-style: oblique;
-		text-shadow: 0px 4px rgba(255, 238, 0, 0.322);
+		text-shadow: 0px 2px rgba(255, 238, 0, 0.322);
 		color:  rgb(255, 238, 0);
 		justify-content: center;
 		justify-items: center;
@@ -384,24 +377,24 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			width: 100vw;
 			align-items: center;
 		}
-		.p2 {
+		.porQue {
 			font-size: 30px;
 		}
-		.p3 {
+		.main {
 			font-size: 40px;
 		}
 	}
 	/* media cel */
 	@media screen and (max-width: 767px){
 		
-		.p2 {
+		.porQue {
 			font-size: 20px;
 			-webkit-text-stroke: 0px;
 		}
 		.imgMenu{ width: 170px;
 			animation: Animacion 3.5s ease 0s 1 normal forwards;
 		}
-		.p3 {
+		.main {
 			font-size: 25px;
 			-webkit-text-stroke: 0px;
 		}
