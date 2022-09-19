@@ -22,6 +22,7 @@ time, mark, audio, video {
 	
 }
 
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -157,11 +158,15 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	display: grid; 
 	grid-template-columns: 1fr 1fr 1fr ; 
 	grid-template-rows: auto; 
-	gap: 0px 0px 0px 10px; 
+	gap: 0px 0px 0px 10px;
+	align-items: center; 
+	align-content: center;
+	justify-content:center;
 	grid-template-areas: 
 		"header header header"
 		"nav nav nav"
 		"div1 div1 div1"
+		".. navPag .."
 		"footer footer footer"; 
 	}
 	.header { grid-area: header; }
@@ -169,7 +174,19 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	.footerpadre { grid-area: footer; 
 		width: 100vw;
 		height: auto;}
-	#div1 {
+	.navPag{
+		display: grid;
+		grid-area: navPag;
+		align-items: center;
+		align-content: center;
+		justify-content:center;
+		
+	}
+	.pagination {
+		align-items: center;
+		margin: 0%;
+	}
+		#div1 {
 		display: grid; 
 		height: auto;
 		width: 100vw;
@@ -453,4 +470,5 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			grid-area: footer2;
 		}
 	}
+	
 	
