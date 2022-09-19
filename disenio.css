@@ -166,7 +166,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"header header header"
 		"nav nav nav"
 		"div1 div1 div1"
-		".. navPag .."
+		"navPag navPag navPag"
 		"footer footer footer"; 
 	}
 	.header { grid-area: header; }
@@ -185,6 +185,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	.pagination {
 		align-items: center;
 		margin: 0%;
+		
 	}
 		#div1 {
 		display: grid; 
