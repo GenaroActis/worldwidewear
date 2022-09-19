@@ -273,6 +273,8 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		grid-template-columns: 1fr 1fr; 
 		grid-template-rows: auto; 
 		gap: 0px 0px;
+		padding: 0%;
+		margin: 0%;
 		width: 100vw;
 		height: auto;
 		justify-content: center;
