@@ -309,7 +309,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		align-content: center;
 		justify-content:center;
 		margin-top: 10vw;
-		margin-bottom: 10vw;
+		margin-bottom: 1vw;
 	}
 	.ropaNav {
 		width: 300px;
