@@ -308,9 +308,11 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		align-items: center;
 		align-content: center;
 		justify-content:center;
+		margin-top: 10vw;
+		margin-bottom: 10vw;
 	}
 	.ropaNav {
-		width: 100px;
+		width: 300px;
 	}
 	.footer {grid-area: footer;
 	margin: 1vw 0vw 0vw 0vw;}
@@ -431,6 +433,9 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		.main {
 			font-size: 40px;
 		}
+		.ropaNav {
+			width: 200px;
+		}
 	}
 	/* media cel */
 	@media screen and (max-width: 767px){
@@ -497,6 +502,9 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			width: 100vw;
 			height: auto;
 			grid-area: footer2;
+		}
+		.ropaNav {
+			width: 100px;
 		}
 	}
 	
