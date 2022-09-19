@@ -423,7 +423,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			-webkit-text-stroke: 0px;
 		}
 		.imgRopa {
-			width: 350px;
+			width: 70vw;
 			height: auto;
 		}
 		.imgMenu{ 
@@ -432,15 +432,15 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		#carouselExampleDark {
-			width: 350px;
+			width: 320px;
 			height: auto;
 		}
 		.backgroundcel {
-			width: 340px;
+			width: 320px;
 			height: auto;
 		}
 		.comprar {
-			width: 340px;
+			width: 320px;
 			height: auto;
 		}
 		.wwwcel2{
