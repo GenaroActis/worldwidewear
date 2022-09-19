@@ -182,6 +182,17 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		justify-content:center;
 		
 	}
+	.page-link2 {
+		position: relative;
+		display: block;
+		padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+		font-size: var(--bs-pagination-font-size);
+		color: white;
+		text-decoration: none;
+		background-color: black;
+		border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	}
 	.pagination {
 		align-items: center;
 		margin: 0%;
@@ -268,6 +279,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"header header"
 		"nav nav"
 		"article article"
+		"navPag2 navPag2"
 		"footer footer"; 
 	}
 	.header { grid-area: header; }
@@ -287,7 +299,16 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		grid-area: article; 
 		margin: 10px 10px;
 	}
-	
+	.navPag2 {
+		display: grid;
+		grid-area: navPag2;
+		align-items: center;
+		align-content: center;
+		justify-content:center;
+	}
+	.ropaNav {
+		width: 100px;
+	}
 	.footer {grid-area: footer;
 	margin: 1vw 0vw 0vw 0vw;}
 	#carouselExampleDark {
