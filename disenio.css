@@ -100,7 +100,6 @@ padding: 0%;}
 display: grid;
 animation: Animacion 2s ease 0s 1 normal forwards;
 }
-
 .imgMenu{
 	width: 200px;
 	margin: 1%;
@@ -114,6 +113,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		opacity: 0;
 	}
 }
+
 .logo{
 	display:grid;
 	align-items: center;
@@ -169,7 +169,10 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"navPag navPag navPag"
 		"footer footer footer"; 
 	}
-	.header { grid-area: header; }
+	#header { grid-area: header; 
+	width: 100vw;
+	height: auto;
+	}
 	.nav { grid-area: nav; }
 	.footerpadre { grid-area: footer; 
 		width: 100vw;
@@ -282,7 +285,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		"navPag2 navPag2"
 		"footer footer"; 
 	}
-	.header { grid-area: header; }
+	#header { grid-area: header; }
 	.nav { grid-area: nav; }
 	.aside { grid-area: aside; }
 	.article {
@@ -473,6 +476,10 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		}
 		.wwwcel{
 			display:none;
+			width: 100vw;
+			height: auto;
+			margin: 0%;
+			padding: 0%;
 		}
 		.footerCel{
 			display: none;
