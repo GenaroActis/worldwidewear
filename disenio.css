@@ -86,7 +86,7 @@ padding: 0%;}
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	margin: 5px 0px;
+	margin: 0px 0px;
 	padding: 0%;
 }
 #nav1 {
@@ -98,11 +98,13 @@ padding: 0%;}
 
 #nav:hover .ul2{
 display: grid;
+position: absolute;
 animation: Animacion 2s ease 0s 1 normal forwards;
+z-index: 1000;
 }
 .imgMenu{
 	width: 200px;
-	margin: 1%;
+	margin: 0%;
 }
 @keyframes Animacion {
 	100% {
@@ -201,7 +203,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		margin: 0%;
 		
 	}
-		#div1 {
+	#div1 {
 		display: grid; 
 		height: auto;
 		width: 100vw;
@@ -310,6 +312,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		align-items: center;
 		align-content: center;
 		justify-content:center;
+		width: 100vw;
 		margin-top: 10vw;
 		margin-bottom: 1vw;
 	}
@@ -320,6 +323,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	margin: 1vw 0vw 0vw 0vw;}
 	#carouselExampleDark {
 		width: 600px;
+		height: auto;
 		justify-content: center;
 		align-items: center;
 		display: grid;
@@ -368,10 +372,13 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 	}
 	
 	@media screen and (max-width: 1023px){
-		
 		.www {
 			display: none;
 		}
+		
+	#nav:hover .ul2{
+		position: relative; 
+	}
 		.footer {
 			display: none;
 		}
@@ -389,6 +396,9 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			margin: 0%;
 			padding: 0%;
 		}
+		#carouselExampleDark{
+			width: 80vw;
+		}
 		.wwwCel {
 			display: grid;
 			width: 100vw;
@@ -398,7 +408,7 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		}
 		.imgMenu{ 
 			display:grid;
-			width: 200px;
+			width: 1fr;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		.ul2 {
@@ -446,32 +456,29 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 			font-size: 20px;
 			-webkit-text-stroke: 0px;
 		}
-		.imgMenu{ width: 170px;
-			animation: Animacion 3.5s ease 0s 1 normal forwards;
-		}
 		.main {
 			font-size: 25px;
 			-webkit-text-stroke: 0px;
 		}
 		.imgRopa {
-			width: 70vw;
+			width: 85vw;
 			height: auto;
 		}
 		.imgMenu{ 
 			display:grid;
-			width: 170px;
+			width: 30vw;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		#carouselExampleDark {
-			width: 320px;
+			width: 85vw;
 			height: auto;
 		}
 		.backgroundcel {
-			width: 320px;
+			width: 85vw;
 			height: auto;
 		}
 		.comprar {
-			width: 320px;
+			width: 85vw;
 			height: auto;
 		}
 		.wwwcel2{
@@ -510,4 +517,9 @@ animation: Animacion 2s ease 0s 1 normal forwards;
 		}
 	}
 	
-	
+	@media screen and (max-width: 576px)
+	{
+		.imgMenu {
+			width: 40vw;
+		}
+	}
