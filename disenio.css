@@ -462,7 +462,7 @@ z-index: 1000;
 	/* media cel */
 	@media screen and (max-width: 767px){
 		.SectionRopaImg{
-			width: 35vw;
+			width: 120px;
 			margin: 1vw;
 		}
 		.porQue {
