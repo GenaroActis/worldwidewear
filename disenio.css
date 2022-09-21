@@ -307,15 +307,21 @@ z-index: 1000;
 		grid-area: article; 
 		margin: 10px 10px;
 	}
-	.navPag2 {
-		display: grid;
+	#sectionRopa {
 		grid-area: navPag2;
+		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		align-content: center;
 		justify-content:center;
 		width: 100vw;
+		margin: 10px;
 		margin-top: 10vw;
-		margin-bottom: 1vw;
+		margin-bottom: 1vw;   
+	}
+	.SectionRopaImg{
+		width: 12vw;
+		margin: 1vw;
 	}
 	.ropaNav {
 		width: 300px;
@@ -376,10 +382,13 @@ z-index: 1000;
 		.www {
 			display: none;
 		}
-		
-	#nav:hover .ul2{
+		.SectionRopaImg{
+			width: 25vw;
+			margin: 1vw;
+		}
+		#nav:hover .ul2{
 		position: relative; 
-	}
+		}
 		.footer {
 			display: none;
 		}
@@ -452,7 +461,10 @@ z-index: 1000;
 	}
 	/* media cel */
 	@media screen and (max-width: 767px){
-		
+		.SectionRopaImg{
+			width: 35vw;
+			margin: 1vw;
+		}
 		.porQue {
 			font-size: 20px;
 			-webkit-text-stroke: 0px;
