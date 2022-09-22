@@ -217,7 +217,7 @@ z-index: 1000;
 	}
 	.imgRopa {
 		display:grid;
-		height: 800px;
+		height: 700px;
 		width:auto;
 		
 	}
@@ -458,8 +458,13 @@ z-index: 1000;
 		.ropaNav {
 			width: 200px;
 		}
+		.imgRopa {
+			width: 50vw;
+			height: auto;
+		}
 	}
 	/* media cel */
+	
 	@media screen and (max-width: 767px){
 		.SectionRopaImg{
 			width: 120px;
@@ -474,12 +479,12 @@ z-index: 1000;
 			-webkit-text-stroke: 0px;
 		}
 		.imgRopa {
-			width: 85vw;
+			width: 65vw;
 			height: auto;
 		}
 		.imgMenu{ 
 			display:grid;
-			width: 30vw;
+			width: 27vw;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		#carouselExampleDark {
@@ -530,9 +535,13 @@ z-index: 1000;
 		}
 	}
 	
-	@media screen and (max-width: 576px)
+	@media screen and (max-width: 476px)
 	{
+		.imgRopa {
+			width: 80vw;
+			height: auto;
+		}
 		.imgMenu {
-			width: 40vw;
+			width: 45vw;
 		}
 	}
