@@ -377,7 +377,11 @@ z-index: 1000;
 	.ropajecel {
 		display: none;
 	}
-	
+	@media screen and (max-width: 1200px){
+		.imgMenu {
+			width: 15vw;
+		}
+	}
 	@media screen and (max-width: 1023px){
 		.www {
 			display: none;
@@ -418,7 +422,7 @@ z-index: 1000;
 		}
 		.imgMenu{ 
 			display:grid;
-			width: 1fr;
+			width: 20vw;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		.ul2 {
