@@ -322,9 +322,22 @@ z-index: 1000;
 	.SectionRopaImg{
 		width: 12vw;
 		margin: 1vw;
+		border: var( rgb(255, 238, 0)) solid var( rgb(255, 238, 0));
 	}
 	.ropaNav {
 		width: 300px;
+	}
+	.page-link1 {
+		position: relative;
+		display: block;
+		padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+		font-size: var(--bs-pagination-font-size);
+		color: rgb(255, 238, 0);
+		border-color: rgb(255, 238, 0);
+		text-decoration: none;
+		background-color: black;
+		border: var(black) solid var(black);
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	.footer {grid-area: footer;
 	margin: 1vw 0vw 0vw 0vw;}
@@ -492,15 +505,15 @@ z-index: 1000;
 			animation: Animacion 2.5s ease 0s 1 normal forwards;
 		}
 		#carouselExampleDark {
-			width: 85vw;
+			width: 80vw;
 			height: auto;
 		}
 		.backgroundcel {
-			width: 85vw;
+			width: 80vw;
 			height: auto;
 		}
 		.comprar {
-			width: 85vw;
+			width: 80vw;
 			height: auto;
 		}
 		.wwwcel2{
