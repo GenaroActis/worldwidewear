@@ -1,0 +1,17 @@
+$amarillo: rgb(255, 238, 0);
+$amarillo2: (255, 238, 0, 0.322);
+
+@keyframes Animacion {
+	100% {
+		opacity: 1;
+	}
+
+	0% {
+		opacity: 0;
+	}
+}
+
+@mixin mix {
+	width: 100vw;
+	height: auto;
+}

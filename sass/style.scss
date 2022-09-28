@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	overflow-x: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: auto;
+	height: 100vw;
+	animation: Animacion 2s ease 0s 1 normal forwards;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.hidden{
+	display:none
+}
+/* fin del reset */
+@import "variables";
+@import "header-footer";
+#index {
+	display: grid; 
+	overflow-x: hidden;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: auto; 
+	gap: 0px 0px; 
+	@include mix;
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"logo logo logo"
+	"footerPadre footerPadre footerPadre";
+	.logo {
+		grid-area: logo; 
+		display:grid;
+		align-items: center;
+		width: auto;
+		height: 80vh;
+	}
+	#footerPadre {
+		grid-area: footerPadre;
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: auto; 
+		align-items: center;
+		align-content: center;
+		gap: 0px 0px; 
+		@include mix;
+		align-items: center;
+		grid-template-areas: 
+		"footer footer footer"
+		"iframe iframe iframe"
+		"footer2 footer2 footer2"; 
+		.footer {
+			grid-area: footer
+		}
+		#iframe {
+			grid-area: iframe;
+			width: 99vw;
+			height: 40vw;
+			position: relative;
+		}
+		.footer2{
+			grid-area: footer2;
+			@include mix;
+		}
+	}
+}
+@media screen and (max-width: 1023px){
+	#index .logo {
+		@include mix;
+	}
+}
+#productos {
+	@include mix;
+	display: grid; 
+	grid-template-columns: auto ; 
+	grid-template-rows: auto; 
+	gap: 0px 0px 0px 10px;
+	align-items: center; 
+	align-content: center;
+	justify-content:center;
+	grid-template-areas: 
+	"header header header"
+	"nav nav nav"
+	"div1 div1 div1"
+	"navPag navPag navPag"
+	"footer footer footer"; 
+	#div1 {
+		display: grid; 
+		height: auto;
+		width: 100vw;
+		grid-template-columns: repeat(auto-fill, minmax(600px, auto));
+		grid-auto-rows: auto; 
+		gap: 0px 40px; 
+		grid-area: div1; 
+		justify-content: center;
+		justify-items: center;
+			.imgRopa {
+				display:grid;
+				height: 700px;
+				width:auto;
+			
+		}
+	}
+	.navPag {
+		display: grid;
+		grid-area: navPag;
+		align-items: center;
+		align-content: center;
+		justify-content:center;
+		.pagination {
+			align-items: center;
+			margin: 0%;
+			.page-link1 {
+				position: relative;
+				display: block;
+				padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+				font-size: var(--bs-pagination-font-size);
+				color: $amarillo;
+				border-color: $amarillo;
+				text-decoration: none;
+				background-color: black;
+				transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+			}
+		}
+	}
+	#footerPadre { 
+		grid-area: footer; 
+		@include mix;
+	}
+}
+@media screen and (max-width: 1023px){
+	#productos #div1 .imgRopa {
+		width: 50vw;
+		height: auto;
+	}
+}
+@media screen and (max-width: 767px){
+	#productos #div1 .imgRopa {
+		width: 65vw;
+		height: auto;
+	}
+}
+@media screen and (max-width: 476px){
+	#productos #div1 .imgRopa {
+		width: 85vw;
+		height: auto;
+	}
+}
+#nosotros {
+	@include mix;
+	.row-padding{
+		@include mix;
+		.porQue {
+			margin-left: 5vw;
+			margin-right: 5vw;
+			display: grid;
+			position: relative;
+			width: 90vw;
+			height: auto;
+			grid-area: p2;
+			font-size: 30px;
+			font-family: monospace;
+			text-align: center;
+			font-style: oblique;
+			-webkit-text-stroke: 0px;
+			font-style: oblique;
+			text-shadow: 0px 2px $amarillo2;
+			color:  $amarillo;
+			justify-content: center;
+			justify-items: center;
+		}
+	}
+	.row{
+		.ropaje{
+			@include mix;
+			padding: 0%;
+		}
+		.ropajecel{
+			display: none;
+			@include mix;
+			padding: 0%;
+		}
+	}
+	.row-margin {
+		.main {
+			margin-left: 5vw;
+			margin-right: 5vw;
+			display: grid;
+			position: relative;
+			width: 90vw;
+			height: auto;
+			grid-area: p2;
+			font-size: 40px;
+			font-family: monospace;
+			text-align: center;
+			font-style: oblique;
+			-webkit-text-stroke: 0px;
+			font-style: oblique;
+			text-shadow: $amarillo2;
+			color:  $amarillo;
+			justify-content: center;
+			justify-items: center;
+		}
+	}
+	#footerPadre {  
+		@include mix;
+	}
+}
+@media screen and (max-width: 1023px){
+	#nosotros .row .ropaje {
+		display: none;
+	}
+	#nosotros .row .ropajecel {
+		@include mix;
+		display: flex;
+	}
+	#nosotros .row-padding .porQue {
+		font-size: 30px;
+	}
+	#nosotros .row-margin .main {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 767px){
+	#nosotros .row-padding .porQue {
+		font-size: 20px;
+	}
+	#nosotros .row-margin .main {
+		font-size: 25px;
+	}
+}
+#mentirita {
+	@include mix;
+}
+#ropa {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: auto; 
+	gap: 0px 0px;
+	padding: 0%;
+	margin: 0%;
+	@include mix;
+	justify-content: center;
+	align-items: center;
+	-ms-grid-column-align: center; 
+	grid-template-areas: 
+	"header header"
+	"nav nav"
+	"article article"
+	"navPag2 navPag2"
+	"footer footer";
+	.article {
+		display: grid; 
+		grid-template-columns: repeat( auto-fit, minmax(37.5rem, auto));
+		grid-auto-rows: auto; 
+		@include mix;
+		-ms-grid-column-align: center;
+		gap: 10px 10px; 
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+		grid-area: article; 
+		margin: 10px 10px;
+		#carouselExampleDark {
+			width: 600px;
+			height: auto;
+			justify-content: center;
+			align-items: center;
+			display: grid;
+		}
+		.div3 {
+			justify-content: center;
+			align-items: center;
+			display: grid;
+			gap: 20px;
+			.backgroundcel {
+				display: grid;
+				justify-content: center;
+				align-items: center;
+			}
+			.comprar {
+			margin-top: 10px;
+			}
+		}
+	}
+	#sectionRopa {
+		grid-area: navPag2;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: center;
+		justify-content:center;
+		@include mix;
+		margin: 10px;
+		margin-top: 10vw;
+		margin-bottom: 1vw; 
+		.SectionRopaImg{
+			width: 12vw;
+			margin: 1vw;
+		}  
+	}
+	#footerPadre {grid-area: footer;
+		margin: 1vw 0vw 0vw 0vw;}
+}
+@media screen and (max-width: 1023px){
+	#ropa #sectionRopa .SectionRopaImg{
+		width: 25vw;
+		margin: 1vw;
+	}
+	#ropa .article #carouselExampleDark{
+		width: 550px;
+	}
+}
+@media screen and (max-width: 767px){
+	#ropa #sectionRopa .SectionRopaImg{
+		width: 120px;
+		margin: 1vw;
+	}
+	#ropa .article #carouselExampleDark {
+		width: 80vw;
+		height: auto;
+	}
+	#ropa .article .div3 .backgroundcel {
+		width: 80vw;
+		height: auto;
+	}
+	#ropa .article .div3 .comprar {
+		width: 80vw;
+		height: auto;
+	}
+}
