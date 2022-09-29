@@ -78,6 +78,7 @@ table {
   grid-area: header;
   width: 100vw;
   height: auto;
+  margin: 0%;
   padding: 0%;
 }
 
@@ -85,6 +86,8 @@ table {
   display: grid;
   width: 100vw;
   height: auto;
+  margin: 0%;
+  padding: 0%;
 }
 
 #nav {
@@ -235,7 +238,7 @@ table {
 }
 @media screen and (max-width: 476px) {
   #nav #nav1 .ul2 .imgMenu {
-    width: 170px;
+    width: 150px;
   }
 }
 #index {
@@ -244,6 +247,10 @@ table {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 0px 0px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   width: 100vw;
   height: auto;
   grid-template-areas: "header header header" "nav nav nav" "logo logo logo" "footerPadre footerPadre footerPadre";
@@ -260,12 +267,9 @@ table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  align-items: center;
-  align-content: center;
   gap: 0px 0px;
   width: 100vw;
   height: auto;
-  align-items: center;
   grid-template-areas: "footer footer footer" "iframe iframe iframe" "footer2 footer2 footer2";
 }
 #index #footerPadre .footer {
@@ -273,7 +277,7 @@ table {
 }
 #index #footerPadre #iframe {
   grid-area: iframe;
-  width: 99vw;
+  width: 99.5vw;
   height: 40vw;
   position: relative;
 }
@@ -299,6 +303,7 @@ table {
   align-items: center;
   align-content: center;
   justify-content: center;
+  justify-items: center;
   grid-template-areas: "header header header" "nav nav nav" "div1 div1 div1" "navPag navPag navPag" "footer footer footer";
 }
 #productos #div1 {
@@ -308,13 +313,17 @@ table {
   grid-template-columns: repeat(auto-fill, minmax(600px, auto));
   grid-auto-rows: auto;
   gap: 0px 40px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   grid-area: div1;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   justify-items: center;
 }
 #productos #div1 .imgRopa {
   display: grid;
-  height: 700px;
+  height: 650px;
   width: auto;
 }
 #productos .navPag {
@@ -323,10 +332,12 @@ table {
   align-items: center;
   align-content: center;
   justify-content: center;
+  justify-items: center;
 }
 #productos .navPag .pagination {
   align-items: center;
   margin: 0%;
+  border-color: rgb(255, 238, 0) solid 1px;
 }
 #productos .navPag .pagination .page-link1 {
   position: relative;
@@ -334,7 +345,6 @@ table {
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
   font-size: var(--bs-pagination-font-size);
   color: rgb(255, 238, 0);
-  border-color: rgb(255, 238, 0);
   text-decoration: none;
   background-color: black;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -353,7 +363,7 @@ table {
 }
 @media screen and (max-width: 767px) {
   #productos #div1 .imgRopa {
-    width: 65vw;
+    width: 400px;
     height: auto;
   }
 }
@@ -387,23 +397,32 @@ table {
   font-style: oblique;
   text-shadow: 0px 2px 255, 238, 0, 0.322;
   color: rgb(255, 238, 0);
+  align-items: center;
+  align-content: center;
   justify-content: center;
   justify-items: center;
+}
+#nosotros .row {
+  margin: 0%;
 }
 #nosotros .row .ropaje {
   width: 100vw;
   height: auto;
   padding: 0%;
+  margin: 0%;
 }
 #nosotros .row .ropajecel {
   display: none;
   width: 100vw;
   height: auto;
   padding: 0%;
+  margin: 0%;
 }
 #nosotros .row-margin .main {
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   display: grid;
   position: relative;
   width: 90vw;
@@ -413,14 +432,39 @@ table {
   font-family: monospace;
   text-align: center;
   font-style: oblique;
-  -webkit-text-stroke: 0px;
+  -webkit-text-stroke: 0.5px;
   font-style: oblique;
   text-shadow: 255, 238, 0, 0.322;
   color: rgb(255, 238, 0);
+  align-items: center;
+  align-content: center;
   justify-content: center;
   justify-items: center;
 }
-#nosotros #footerPadre {
+#nosotros .row {
+  padding: 0%;
+  margin: 0%;
+  --bs-gutter-x: 0%;
+}
+#nosotros .row #footerPadre {
+  width: 100vw;
+  height: auto;
+}
+#nosotros .row #footerPadre .footer {
+  padding: 0%;
+  margin: 0%;
+  width: 100vw;
+  height: auto;
+}
+#nosotros .row #footerPadre .footerCel {
+  padding: 0%;
+  margin: 0%;
+  width: 100vw;
+  height: auto;
+}
+#nosotros .row #footerPadre .footerCel2 {
+  padding: 0%;
+  margin: 0%;
   width: 100vw;
   height: auto;
 }
@@ -449,6 +493,14 @@ table {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 476px) {
+  #nosotros .row-padding .porQue {
+    font-size: 15px;
+  }
+  #nosotros .row-margin .main {
+    font-size: 20px;
+  }
+}
 #mentirita {
   width: 100vw;
   height: auto;
@@ -463,9 +515,10 @@ table {
   margin: 0%;
   width: 100vw;
   height: auto;
-  justify-content: center;
   align-items: center;
-  -ms-grid-column-align: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   grid-template-areas: "header header" "nav nav" "article article" "navPag2 navPag2" "footer footer";
 }
 #ropa .article {
@@ -476,8 +529,9 @@ table {
   height: auto;
   -ms-grid-column-align: center;
   gap: 10px 10px;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   justify-items: center;
   grid-area: article;
   margin: 10px 10px;
@@ -485,20 +539,26 @@ table {
 #ropa .article #carouselExampleDark {
   width: 600px;
   height: auto;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   display: grid;
 }
 #ropa .article .div3 {
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   display: grid;
   gap: 20px;
 }
 #ropa .article .div3 .backgroundcel {
   display: grid;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 #ropa .article .div3 .comprar {
   margin-top: 10px;
@@ -510,6 +570,7 @@ table {
   align-items: center;
   align-content: center;
   justify-content: center;
+  justify-items: center;
   width: 100vw;
   height: auto;
   margin: 10px;

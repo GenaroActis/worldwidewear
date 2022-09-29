@@ -57,6 +57,7 @@ table {
 	grid-template-columns: 1fr 1fr 1fr; 
 	grid-template-rows: auto; 
 	gap: 0px 0px; 
+	@include center;
 	@include mix;
 	grid-template-areas: 
 	"header header header"
@@ -75,11 +76,8 @@ table {
 		display: grid; 
 		grid-template-columns: 1fr 1fr 1fr; 
 		grid-template-rows: auto; 
-		align-items: center;
-		align-content: center;
 		gap: 0px 0px; 
 		@include mix;
-		align-items: center;
 		grid-template-areas: 
 		"footer footer footer"
 		"iframe iframe iframe"
@@ -89,7 +87,7 @@ table {
 		}
 		#iframe {
 			grid-area: iframe;
-			width: 99vw;
+			width: 99.5vw;
 			height: 40vw;
 			position: relative;
 		}
@@ -110,9 +108,7 @@ table {
 	grid-template-columns: auto ; 
 	grid-template-rows: auto; 
 	gap: 0px 0px 0px 10px;
-	align-items: center; 
-	align-content: center;
-	justify-content:center;
+	@include center;
 	grid-template-areas: 
 	"header header header"
 	"nav nav nav"
@@ -125,23 +121,21 @@ table {
 		width: 100vw;
 		grid-template-columns: repeat(auto-fill, minmax(600px, auto));
 		grid-auto-rows: auto; 
-		gap: 0px 40px; 
+		gap: 0px 40px;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
 		grid-area: div1; 
-		justify-content: center;
-		justify-items: center;
-			.imgRopa {
-				display:grid;
-				height: 700px;
-				width:auto;
-			
-		}
+		@include center;
+		.imgRopa {
+			display:grid;
+			height: 650px;
+			width:auto;
+			}
 	}
 	.navPag {
 		display: grid;
 		grid-area: navPag;
-		align-items: center;
-		align-content: center;
-		justify-content:center;
+		@include center;
 		.pagination {
 			align-items: center;
 			margin: 0%;
@@ -150,8 +144,7 @@ table {
 				display: block;
 				padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
 				font-size: var(--bs-pagination-font-size);
-				color: $amarillo;
-				border-color: $amarillo;
+				color: map-get($colores, $amarillo );
 				text-decoration: none;
 				background-color: black;
 				transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -171,7 +164,7 @@ table {
 }
 @media screen and (max-width: 767px){
 	#productos #div1 .imgRopa {
-		width: 65vw;
+		width: 400px;
 		height: auto;
 	}
 }
@@ -199,27 +192,31 @@ table {
 			font-style: oblique;
 			-webkit-text-stroke: 0px;
 			font-style: oblique;
-			text-shadow: 0px 2px $amarillo2;
+			text-shadow: 0px 2px  map-get($colores, $amarillo2 );;
 			color:  $amarillo;
-			justify-content: center;
-			justify-items: center;
+			@include center;
 		}
 	}
 	.row{
+		margin: 0%;
 		.ropaje{
 			@include mix;
 			padding: 0%;
+			margin: 0%;
 		}
 		.ropajecel{
 			display: none;
 			@include mix;
 			padding: 0%;
+			margin: 0%;
 		}
 	}
 	.row-margin {
 		.main {
 			margin-left: 5vw;
 			margin-right: 5vw;
+			margin-top: 2vh;
+			margin-bottom:  2vh;
 			display: grid;
 			position: relative;
 			width: 90vw;
@@ -229,16 +226,35 @@ table {
 			font-family: monospace;
 			text-align: center;
 			font-style: oblique;
-			-webkit-text-stroke: 0px;
+			-webkit-text-stroke: 0.5px;
 			font-style: oblique;
-			text-shadow: $amarillo2;
-			color:  $amarillo;
-			justify-content: center;
-			justify-items: center;
+			text-shadow:  map-get($colores, $amarillo2 );;
+			color:   map-get($colores, $amarillo );;
+			@include center;
 		}
 	}
-	#footerPadre {  
-		@include mix;
+	.row{
+		padding: 0%;
+		margin: 0%;
+		--bs-gutter-x: 0%;
+		#footerPadre {  
+			@include mix;
+			.footer {
+				padding: 0%;
+				margin: 0%;
+				@include mix;
+			}
+			.footerCel {
+				padding: 0%;
+				margin: 0%;
+				@include mix;
+			}
+			.footerCel2 {
+				padding: 0%;
+				margin: 0%;
+				@include mix;
+			}
+		}
 	}
 }
 @media screen and (max-width: 1023px){
@@ -264,6 +280,14 @@ table {
 		font-size: 25px;
 	}
 }
+@media screen and (max-width: 476px){
+	#nosotros .row-padding .porQue {
+		font-size: 15px;
+	}
+	#nosotros .row-margin .main {
+		font-size: 20px;
+	}
+}
 #mentirita {
 	@include mix;
 }
@@ -275,9 +299,7 @@ table {
 	padding: 0%;
 	margin: 0%;
 	@include mix;
-	justify-content: center;
-	align-items: center;
-	-ms-grid-column-align: center; 
+	@include center;
 	grid-template-areas: 
 	"header header"
 	"nav nav"
@@ -291,27 +313,22 @@ table {
 		@include mix;
 		-ms-grid-column-align: center;
 		gap: 10px 10px; 
-		justify-content: center;
-		align-items: center;
-		justify-items: center;
+		@include center;
 		grid-area: article; 
 		margin: 10px 10px;
 		#carouselExampleDark {
 			width: 600px;
 			height: auto;
-			justify-content: center;
-			align-items: center;
+			@include center;
 			display: grid;
 		}
 		.div3 {
-			justify-content: center;
-			align-items: center;
+			@include center;
 			display: grid;
 			gap: 20px;
 			.backgroundcel {
 				display: grid;
-				justify-content: center;
-				align-items: center;
+				@include center;
 			}
 			.comprar {
 			margin-top: 10px;
@@ -322,9 +339,7 @@ table {
 		grid-area: navPag2;
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
-		align-content: center;
-		justify-content:center;
+		@include center;
 		@include mix;
 		margin: 10px;
 		margin-top: 10vw;

@@ -2,12 +2,15 @@
     grid-area: header; 
     width: 100vw;
 	height: auto;
-    padding: 0%;
+    margin: 0%;
+	padding: 0%;
     }
 		.www {
-		display: grid;
-		width: 100vw;
-		height: auto;
+			display: grid;
+			width: 100vw;
+			height: auto;
+			margin: 0%;
+			padding: 0%;
 		}
 	#nav {
 	grid-area: nav;
@@ -148,6 +151,6 @@
 }
 @media screen and (max-width: 476px){
 	#nav #nav1 .ul2 .imgMenu {
-		width: 170px;
+		width: 150px;
 	}
 }
