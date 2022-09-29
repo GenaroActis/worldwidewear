@@ -96,7 +96,8 @@
 	}
 	#nav #nav1 .ul2 .imgMenu{ 
 		display:grid;
-		width: 225px;
+		width: 200px;
+		
 	}
 	#header #nav1:hover .ul2{
 		display: grid;
@@ -125,7 +126,7 @@
 	}
 	#nav #nav1 .ul2 .imgMenu{ 
 		display:grid;
-		width: 200px;
+		width: 150px;
 	}
 	#header .wwwcel2{
 		margin: 0%;
@@ -151,6 +152,6 @@
 }
 @media screen and (max-width: 476px){
 	#nav #nav1 .ul2 .imgMenu {
-		width: 150px;
+		width: 120px;
 	}
 }

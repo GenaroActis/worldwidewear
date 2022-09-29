@@ -144,7 +144,7 @@ table {
 				display: block;
 				padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
 				font-size: var(--bs-pagination-font-size);
-				color: map-get($colores, $amarillo );
+				color: $amarillo;
 				text-decoration: none;
 				background-color: black;
 				transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -192,7 +192,7 @@ table {
 			font-style: oblique;
 			-webkit-text-stroke: 0px;
 			font-style: oblique;
-			text-shadow: 0px 2px  map-get($colores, $amarillo2 );;
+			text-shadow: 0px 2px $amarillo2;
 			color:  $amarillo;
 			@include center;
 		}
@@ -228,8 +228,8 @@ table {
 			font-style: oblique;
 			-webkit-text-stroke: 0.5px;
 			font-style: oblique;
-			text-shadow:  map-get($colores, $amarillo2 );;
-			color:   map-get($colores, $amarillo );;
+			text-shadow: $amarillo2;
+			color:  $amarillo;
 			@include center;
 		}
 	}
@@ -317,7 +317,7 @@ table {
 		grid-area: article; 
 		margin: 10px 10px;
 		#carouselExampleDark {
-			width: 600px;
+			width: 650px;
 			height: auto;
 			@include center;
 			display: grid;
@@ -358,7 +358,7 @@ table {
 		margin: 1vw;
 	}
 	#ropa .article #carouselExampleDark{
-		width: 550px;
+		width: 50vw;
 	}
 }
 @media screen and (max-width: 767px){
@@ -367,15 +367,15 @@ table {
 		margin: 1vw;
 	}
 	#ropa .article #carouselExampleDark {
-		width: 80vw;
+		width: 400px;
 		height: auto;
 	}
 	#ropa .article .div3 .backgroundcel {
-		width: 80vw;
+		width: 400px;
 		height: auto;
 	}
 	#ropa .article .div3 .comprar {
-		width: 80vw;
+		width: 400px;
 		height: auto;
 	}
 }
