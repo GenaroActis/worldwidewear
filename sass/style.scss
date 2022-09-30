@@ -100,7 +100,8 @@ table {
 }
 @media screen and (max-width: 1023px){
 	#index .logo {
-		@include mix;
+		width: 600px;
+		height: auto;
 	}
 }
 #productos {
@@ -179,6 +180,9 @@ table {
 #nosotros {
 	@include mix;
 	background-color: black;
+	.h1 {
+		color: black
+	}
 	.row-padding{
 		@include mix;
 		.porQue {
@@ -322,7 +326,7 @@ table {
 		grid-area: article; 
 		margin: 10px 10px;
 		#carouselExampleDark {
-			width: 650px;
+			width: 500px;
 			height: auto;
 			@include center;
 			display: grid;
@@ -381,6 +385,24 @@ table {
 	}
 	#ropa .article .div3 .comprar {
 		width: 400px;
+		height: auto;
+	}
+}
+@media screen and (max-width: 476px){
+	#ropa #sectionRopa .SectionRopaImg{
+		width: 100px;
+		margin: 1vw;
+	}
+	#ropa .article #carouselExampleDark {
+		width: 80vw;
+		height: auto;
+	}
+	#ropa .article .div3 .backgroundcel {
+		width: 80vw;
+		height: auto;
+	}
+	#ropa .article .div3 .comprar {
+		width: 80vw;
 		height: auto;
 	}
 }

@@ -291,7 +291,7 @@ table {
 
 @media screen and (max-width: 1023px) {
   #index .logo {
-    width: 100vw;
+    width: 600px;
     height: auto;
   }
 }
@@ -382,6 +382,9 @@ table {
   width: 100vw;
   height: auto;
   background-color: black;
+}
+#nosotros .h1 {
+  color: black;
 }
 #nosotros .row-padding {
   width: 100vw;
@@ -549,7 +552,7 @@ table {
   margin: 10px 10px;
 }
 #ropa .article #carouselExampleDark {
-  width: 650px;
+  width: 500px;
   height: auto;
   align-items: center;
   align-content: center;
@@ -626,6 +629,24 @@ table {
   }
   #ropa .article .div3 .comprar {
     width: 400px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 476px) {
+  #ropa #sectionRopa .SectionRopaImg {
+    width: 100px;
+    margin: 1vw;
+  }
+  #ropa .article #carouselExampleDark {
+    width: 80vw;
+    height: auto;
+  }
+  #ropa .article .div3 .backgroundcel {
+    width: 80vw;
+    height: auto;
+  }
+  #ropa .article .div3 .comprar {
+    width: 80vw;
     height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
