@@ -52,6 +52,7 @@ table {
 @import "variables";
 @import "header-footer";
 #index {
+	background-color: black;
 	display: grid; 
 	overflow-x: hidden;
 	grid-template-columns: 1fr 1fr 1fr; 
@@ -104,6 +105,7 @@ table {
 }
 #productos {
 	@include mix;
+	background-color: black;
 	display: grid; 
 	grid-template-columns: auto ; 
 	grid-template-rows: auto; 
@@ -176,6 +178,7 @@ table {
 }
 #nosotros {
 	@include mix;
+	background-color: black;
 	.row-padding{
 		@include mix;
 		.porQue {
@@ -290,9 +293,11 @@ table {
 }
 #mentirita {
 	@include mix;
+	background-color: black;
 }
 #ropa {
 	display: grid; 
+	background-color: black;
 	grid-template-columns: 1fr 1fr; 
 	grid-template-rows: auto; 
 	gap: 0px 0px;
