@@ -84,7 +84,8 @@ table {
 		"iframe iframe iframe"
 		"footer2 footer2 footer2"; 
 		.footer {
-			grid-area: footer
+			grid-area: footer;
+			padding-bottom: 3px;
 		}
 		#iframe {
 			grid-area: iframe;
@@ -95,6 +96,7 @@ table {
 		.footer2{
 			grid-area: footer2;
 			@include mix;
+			padding-top: 1px;
 		}
 	}
 }

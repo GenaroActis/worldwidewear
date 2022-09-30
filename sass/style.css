@@ -276,6 +276,7 @@ table {
 }
 #index #footerPadre .footer {
   grid-area: footer;
+  padding-bottom: 3px;
 }
 #index #footerPadre #iframe {
   grid-area: iframe;
@@ -287,6 +288,7 @@ table {
   grid-area: footer2;
   width: 100vw;
   height: auto;
+  padding-top: 1px;
 }
 
 @media screen and (max-width: 1023px) {
