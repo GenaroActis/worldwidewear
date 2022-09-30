@@ -295,6 +295,12 @@ table {
     height: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  #index .logo {
+    width: 80vw;
+    height: auto;
+  }
+}
 #productos {
   width: 100vw;
   height: auto;

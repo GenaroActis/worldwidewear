@@ -104,6 +104,12 @@ table {
 		height: auto;
 	}
 }
+@media screen and (max-width: 767px){
+	#index .logo {
+		width: 80vw;
+		height: auto
+	}
+}
 #productos {
 	@include mix;
 	background-color: black;
