@@ -71,6 +71,11 @@ table {
 		align-items: center;
 		width: auto;
 		height: 80vh;
+		color: black;
+		.logotext {
+			position: absolute;
+			z-index: -1;
+		}
 	}
 	#footerPadre {
 		grid-area: footerPadre;
