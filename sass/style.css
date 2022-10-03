@@ -480,28 +480,31 @@ table {
   margin: 0%;
 }
 #nosotros .container-fluid-paddingnone .main {
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  display: grid;
+  box-sizing: content-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20vw;
   position: relative;
-  width: 98vw;
+  width: 100vw;
   height: auto;
   grid-area: p2;
-  font-size: 40px;
-  font-family: monospace;
-  text-align: center;
-  font-style: oblique;
   -webkit-text-stroke: 0.5px;
-  font-style: oblique;
-  text-shadow: 255, 238, 0, 0.322;
   color: rgb(255, 238, 0);
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-self: center;
   justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .main a {
+  transition: all 1s ease-in-out;
+}
+#nosotros .container-fluid-paddingnone .main a img {
+  width: 15vw;
+}
+#nosotros .container-fluid-paddingnone .main a:hover {
+  transform: scale(1.2);
 }
 #nosotros .container-fluid-paddingnone #footerPadre {
   width: 100vw;
@@ -538,24 +541,21 @@ table {
   #nosotros .row2 .porQue {
     font-size: 30px;
   }
-  #nosotros .row4 .main {
-    font-size: 40px;
-  }
 }
 @media screen and (max-width: 767px) {
   #nosotros .row2 .porQue {
     font-size: 20px;
   }
-  #nosotros .row-4 .main {
-    font-size: 25px;
+  #nosotros .row-4 .main a img {
+    width: 17vw;
   }
 }
 @media screen and (max-width: 476px) {
   #nosotros .row2 .porQue {
     font-size: 15px;
   }
-  #nosotros .row4 .main {
-    font-size: 20px;
+  #nosotros .row4 .main a img {
+    width: 30vw;
   }
 }
 #mentirita {

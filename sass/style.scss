@@ -118,6 +118,7 @@ table {
 		height: auto
 	}
 }
+
 #productos {
 	@include mix;
 	background-color: black;
@@ -191,6 +192,7 @@ table {
 		height: auto;
 	}
 }
+
 #nosotros {
 	background-color: black;
 	@include mix;
@@ -238,24 +240,27 @@ table {
 			margin: 0%;
 		}
 		.main {
-			margin-left: 1vw;
-			margin-right: 1vw;
-			margin-top: 2vw;
-			margin-bottom: 2vw;
-			display: grid;
+			box-sizing: content-box;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			display: flex;
+			gap: 20vw;
 			position: relative;
-			width: 98vw;
+			width: 100vw;
 			height: auto;
 			grid-area: p2;
-			font-size: 40px;
-			font-family: monospace;
-			text-align: center;
-			font-style: oblique;
 			-webkit-text-stroke: 0.5px;
-			font-style: oblique;
-			text-shadow: $amarillo2;
 			color:  $amarillo;
 			@include center;
+			a {
+				transition: all 1s ease-in-out ;
+				img {
+					width: 15vw;
+				}
+			}
+		}
+		.main a:hover{
+			transform: scale(1.2)
 		}
 		#footerPadre {  
 			@include mix;
@@ -288,30 +293,29 @@ table {
 	#nosotros .row2 .porQue {
 		font-size: 30px;
 	}
-	#nosotros .row4 .main {
-		font-size: 40px;
-	}
 }
 @media screen and (max-width: 767px){
 	#nosotros .row2 .porQue {
 		font-size: 20px;
 	}
-	#nosotros .row-4 .main {
-		font-size: 25px;
+	#nosotros .row-4 .main a img{
+		width: 17vw;
 	}
 }
 @media screen and (max-width: 476px){
 	#nosotros .row2 .porQue {
 		font-size: 15px;
 	}
-	#nosotros .row4 .main {
-		font-size: 20px;
+	#nosotros .row4 .main a img{
+		width: 30vw;
 	}
 }
+
 #mentirita {
 	@include mix;
 	background-color: black;
 }
+
 #ropa {
 	display: grid; 
 	background-color: black;
