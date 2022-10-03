@@ -17,7 +17,6 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  overflow: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -548,7 +547,7 @@ table {
 }
 @media screen and (max-width: 767px) {
   #nosotros .row2 .porQue {
-    font-size: 20px;
+    font-size: 25px;
   }
   #nosotros .row-4 .main a img {
     width: 17vw;
@@ -556,7 +555,7 @@ table {
 }
 @media screen and (max-width: 476px) {
   #nosotros .row2 .porQue {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 0vw;
     margin-right: 0vw;
     width: 100vw;
@@ -613,6 +612,9 @@ table {
   justify-self: center;
   justify-items: center;
   display: grid;
+}
+#ropa .article #carouselExampleDark .botonCarousel {
+  width: 100px;
 }
 #ropa .article .div3 {
   align-items: center;
@@ -701,5 +703,8 @@ table {
   #ropa .article .div3 .comprar {
     width: 80vw;
     height: auto;
+  }
+  .article #carouselExampleDark .botonCarousel {
+    width: 2vw;
   }
 }/*# sourceMappingURL=style.css.map */
