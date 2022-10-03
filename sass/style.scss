@@ -419,7 +419,6 @@ table {
 @media screen and (max-width: 476px){
 	#ropa #sectionRopa .SectionRopaImg{
 		width: 100px;
-		margin: 1vw;
 	}
 	#ropa .article #carouselExampleDark {
 		width: 80vw;
@@ -437,3 +436,9 @@ table {
 		width: 2vw;
 	}
 }
+@media screen and (max-width: 375px){
+	#ropa #sectionRopa .SectionRopaImg{
+		width: 80px;
+	}
+}
+
