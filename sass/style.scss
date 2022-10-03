@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -215,7 +215,7 @@ table {
 			height: auto;
 			grid-area: p2;
 			font-size: 30px;
-			font-family: monospace;
+			font-family: bebas neue;
 			text-align: center;
 			font-style: oblique;
 			-webkit-text-stroke: 0px;
@@ -226,7 +226,11 @@ table {
 			margin-left: 10vw;			
 			margin-right: 10vw;	
 			margin-top: 2vw;
-			margin-bottom: 2vw;		
+			margin-bottom: 2vw;	
+			overflow: hidden;
+			.strong{
+				width:100vw;
+			}	
 		}
 		.ropaje{
 			@include mix;
@@ -255,7 +259,7 @@ table {
 			a {
 				transition: all 1s ease-in-out ;
 				img {
-					width: 15vw;
+					width: 12vw;
 				}
 			}
 		}
@@ -305,6 +309,9 @@ table {
 @media screen and (max-width: 476px){
 	#nosotros .row2 .porQue {
 		font-size: 15px;
+		margin-left: 0vw;			
+		margin-right: 0vw;
+		width: 100vw;	
 	}
 	#nosotros .row4 .main a img{
 		width: 30vw;

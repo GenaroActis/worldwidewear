@@ -17,7 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -449,7 +449,7 @@ table {
   height: auto;
   grid-area: p2;
   font-size: 30px;
-  font-family: monospace;
+  font-family: bebas neue;
   text-align: center;
   font-style: oblique;
   -webkit-text-stroke: 0px;
@@ -465,6 +465,10 @@ table {
   margin-right: 10vw;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  overflow: hidden;
+}
+#nosotros .container-fluid-paddingnone .porQue .strong {
+  width: 100vw;
 }
 #nosotros .container-fluid-paddingnone .ropaje {
   width: 100vw;
@@ -501,7 +505,7 @@ table {
   transition: all 1s ease-in-out;
 }
 #nosotros .container-fluid-paddingnone .main a img {
-  width: 15vw;
+  width: 12vw;
 }
 #nosotros .container-fluid-paddingnone .main a:hover {
   transform: scale(1.2);
@@ -553,6 +557,9 @@ table {
 @media screen and (max-width: 476px) {
   #nosotros .row2 .porQue {
     font-size: 15px;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    width: 100vw;
   }
   #nosotros .row4 .main a img {
     width: 30vw;
