@@ -263,6 +263,7 @@ table {
   align-items: center;
   width: auto;
   height: 80vh;
+  padding-bottom: 5vw;
   color: black;
 }
 #index .logo .logotext {
@@ -392,23 +393,59 @@ table {
   }
 }
 #nosotros {
-  width: 100vw;
-  height: auto;
   background-color: black;
-}
-#nosotros .h1 {
-  color: black;
-}
-#nosotros .row-padding {
   width: 100vw;
   height: auto;
 }
-#nosotros .row-padding .porQue {
-  margin-left: 5vw;
-  margin-right: 5vw;
+#nosotros .container-fluid-paddingnone .row1 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .row2 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .row3 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .row4 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .row5 {
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+#nosotros .container-fluid-paddingnone .porQue {
   display: grid;
   position: relative;
-  width: 90vw;
+  width: 80vw;
   height: auto;
   grid-area: p2;
   font-size: 30px;
@@ -424,31 +461,32 @@ table {
   justify-content: center;
   justify-self: center;
   justify-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
-#nosotros .row {
-  margin: 0%;
-}
-#nosotros .row .ropaje {
+#nosotros .container-fluid-paddingnone .ropaje {
   width: 100vw;
   height: auto;
   padding: 0%;
   margin: 0%;
 }
-#nosotros .row .ropajecel {
+#nosotros .container-fluid-paddingnone .ropajecel {
   display: none;
   width: 100vw;
   height: auto;
   padding: 0%;
   margin: 0%;
 }
-#nosotros .row-margin .main {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+#nosotros .container-fluid-paddingnone .main {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   display: grid;
   position: relative;
-  width: 90vw;
+  width: 98vw;
   height: auto;
   grid-area: p2;
   font-size: 40px;
@@ -465,28 +503,23 @@ table {
   justify-self: center;
   justify-items: center;
 }
-#nosotros .row {
-  padding: 0%;
-  margin: 0%;
-  --bs-gutter-x: 0%;
-}
-#nosotros .row #footerPadre {
+#nosotros .container-fluid-paddingnone #footerPadre {
   width: 100vw;
   height: auto;
 }
-#nosotros .row #footerPadre .footer {
+#nosotros .container-fluid-paddingnone #footerPadre .footer {
   padding: 0%;
   margin: 0%;
   width: 100vw;
   height: auto;
 }
-#nosotros .row #footerPadre .footerCel {
+#nosotros .container-fluid-paddingnone #footerPadre .footerCel {
   padding: 0%;
   margin: 0%;
   width: 100vw;
   height: auto;
 }
-#nosotros .row #footerPadre .footerCel2 {
+#nosotros .container-fluid-paddingnone #footerPadre .footerCel2 {
   padding: 0%;
   margin: 0%;
   width: 100vw;
@@ -494,34 +527,34 @@ table {
 }
 
 @media screen and (max-width: 1023px) {
-  #nosotros .row .ropaje {
+  #nosotros .row3 .ropaje {
     display: none;
   }
-  #nosotros .row .ropajecel {
+  #nosotros .row3 .ropajecel {
     width: 100vw;
     height: auto;
     display: flex;
   }
-  #nosotros .row-padding .porQue {
+  #nosotros .row2 .porQue {
     font-size: 30px;
   }
-  #nosotros .row-margin .main {
+  #nosotros .row4 .main {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 767px) {
-  #nosotros .row-padding .porQue {
+  #nosotros .row2 .porQue {
     font-size: 20px;
   }
-  #nosotros .row-margin .main {
+  #nosotros .row-4 .main {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 476px) {
-  #nosotros .row-padding .porQue {
+  #nosotros .row2 .porQue {
     font-size: 15px;
   }
-  #nosotros .row-margin .main {
+  #nosotros .row4 .main {
     font-size: 20px;
   }
 }

@@ -71,6 +71,7 @@ table {
 		align-items: center;
 		width: auto;
 		height: 80vh;
+		padding-bottom: 5vw;
 		color: black;
 		.logotext {
 			position: absolute;
@@ -191,19 +192,24 @@ table {
 	}
 }
 #nosotros {
-	@include mix;
 	background-color: black;
-	.h1 {
-		color: black
-	}
-	.row-padding{
-		@include mix;
+	@include mix;
+	.container-fluid-paddingnone{
+		@each $row in row1 row2 row3 row4 row5 {
+			.#{$row} {
+				width: 100vw;
+				height: auto;
+				align-items: center;
+				align-content: center;
+				justify-content:center;
+				justify-self: center;
+				justify-items: center;
+			}
+		}
 		.porQue {
-			margin-left: 5vw;
-			margin-right: 5vw;
 			display: grid;
 			position: relative;
-			width: 90vw;
+			width: 80vw;
 			height: auto;
 			grid-area: p2;
 			font-size: 30px;
@@ -215,10 +221,11 @@ table {
 			text-shadow: 0px 2px $amarillo2;
 			color:  $amarillo;
 			@include center;
+			margin-left: 10vw;			
+			margin-right: 10vw;	
+			margin-top: 2vw;
+			margin-bottom: 2vw;		
 		}
-	}
-	.row{
-		margin: 0%;
 		.ropaje{
 			@include mix;
 			padding: 0%;
@@ -230,16 +237,14 @@ table {
 			padding: 0%;
 			margin: 0%;
 		}
-	}
-	.row-margin {
 		.main {
-			margin-left: 5vw;
-			margin-right: 5vw;
-			margin-top: 2vh;
-			margin-bottom:  2vh;
+			margin-left: 1vw;
+			margin-right: 1vw;
+			margin-top: 2vw;
+			margin-bottom: 2vw;
 			display: grid;
 			position: relative;
-			width: 90vw;
+			width: 98vw;
 			height: auto;
 			grid-area: p2;
 			font-size: 40px;
@@ -252,11 +257,6 @@ table {
 			color:  $amarillo;
 			@include center;
 		}
-	}
-	.row{
-		padding: 0%;
-		margin: 0%;
-		--bs-gutter-x: 0%;
 		#footerPadre {  
 			@include mix;
 			.footer {
@@ -278,33 +278,33 @@ table {
 	}
 }
 @media screen and (max-width: 1023px){
-	#nosotros .row .ropaje {
+	#nosotros .row3 .ropaje {
 		display: none;
 	}
-	#nosotros .row .ropajecel {
+	#nosotros .row3 .ropajecel {
 		@include mix;
 		display: flex;
 	}
-	#nosotros .row-padding .porQue {
+	#nosotros .row2 .porQue {
 		font-size: 30px;
 	}
-	#nosotros .row-margin .main {
+	#nosotros .row4 .main {
 		font-size: 40px;
 	}
 }
 @media screen and (max-width: 767px){
-	#nosotros .row-padding .porQue {
+	#nosotros .row2 .porQue {
 		font-size: 20px;
 	}
-	#nosotros .row-margin .main {
+	#nosotros .row-4 .main {
 		font-size: 25px;
 	}
 }
 @media screen and (max-width: 476px){
-	#nosotros .row-padding .porQue {
+	#nosotros .row2 .porQue {
 		font-size: 15px;
 	}
-	#nosotros .row-margin .main {
+	#nosotros .row4 .main {
 		font-size: 20px;
 	}
 }
