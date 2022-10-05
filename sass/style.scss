@@ -74,14 +74,15 @@ table {
 		height: 80vh;
 		padding-bottom: 5vw;
 	}
-	h1 {
+	.h1 {
 		grid-area: h1;
-		color: $amarillo;
+		color: black;
 		font-size: 40px;
 		position: relative;
 		align-self: center;
 		text-align: center;
 		@include mix;
+		@include center;
 		font-family: bebas neue;
 		font-style: oblique;
 	}
@@ -99,6 +100,7 @@ table {
 		.footer {
 			grid-area: footer;
 			padding-bottom: 3px;
+			@include mix
 		}
 		#iframe {
 			grid-area: iframe;
