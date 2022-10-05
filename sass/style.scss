@@ -64,6 +64,7 @@ table {
 	"header header header"
 	"nav nav nav"
 	"logo logo logo"
+	"h1 h1 h1"
 	"footerPadre footerPadre footerPadre";
 	.logo {
 		grid-area: logo; 
@@ -72,13 +73,17 @@ table {
 		width: auto;
 		height: 80vh;
 		padding-bottom: 5vw;
-		color: black;
-		.logotext {
-			position: absolute;
-			z-index: -1;
-			color: black;
-			font-size: 1px;
-		}
+	}
+	h1 {
+		grid-area: h1;
+		color: $amarillo;
+		font-size: 40px;
+		position: relative;
+		align-self: center;
+		text-align: center;
+		@include mix;
+		font-family: bebas neue;
+		font-style: oblique;
 	}
 	#footerPadre {
 		grid-area: footerPadre;
@@ -113,11 +118,17 @@ table {
 		width: 600px;
 		height: auto;
 	}
+	#index h1 {
+		font-size: 35px;
+	}
 }
 @media screen and (max-width: 767px){
 	#index .logo {
 		width: 80vw;
 		height: auto
+	}
+	#index h1 {
+		font-size: 10vw;
 	}
 }
 

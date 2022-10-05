@@ -254,7 +254,7 @@ table {
   justify-items: center;
   width: 100vw;
   height: auto;
-  grid-template-areas: "header header header" "nav nav nav" "logo logo logo" "footerPadre footerPadre footerPadre";
+  grid-template-areas: "header header header" "nav nav nav" "logo logo logo" "h1 h1 h1" "footerPadre footerPadre footerPadre";
 }
 #index .logo {
   grid-area: logo;
@@ -263,12 +263,18 @@ table {
   width: auto;
   height: 80vh;
   padding-bottom: 5vw;
-  color: black;
 }
-#index .logo .logotext {
-  position: absolute;
-  z-index: -1;
-  color: black;
+#index h1 {
+  grid-area: h1;
+  color: rgb(255, 238, 0);
+  font-size: 40px;
+  position: relative;
+  align-self: center;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  font-family: bebas neue;
+  font-style: oblique;
 }
 #index #footerPadre {
   grid-area: footerPadre;
@@ -302,11 +308,17 @@ table {
     width: 600px;
     height: auto;
   }
+  #index h1 {
+    font-size: 35px;
+  }
 }
 @media screen and (max-width: 767px) {
   #index .logo {
     width: 80vw;
     height: auto;
+  }
+  #index h1 {
+    font-size: 10vw;
   }
 }
 #productos {
