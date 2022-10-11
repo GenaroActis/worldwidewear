@@ -73,6 +73,62 @@ table {
     opacity: 0;
   }
 }
+@-webkit-keyframes myAnim {
+  0% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+@keyframes myAnim {
+  0% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
 #header {
   grid-area: header;
   width: 100vw;
@@ -108,8 +164,8 @@ table {
 #nav #nav1:hover .ul2 {
   display: grid;
   position: absolute;
-  -webkit-animation: Animacion 2s ease 0s 1 normal forwards;
-          animation: Animacion 2s ease 0s 1 normal forwards;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
   z-index: 1000;
 }
 #nav ul {
@@ -263,6 +319,8 @@ table {
   width: auto;
   height: 80vh;
   padding-bottom: 5vw;
+  -webkit-animation: Animacion 2s ease 0s 1 normal forwards;
+          animation: Animacion 2s ease 0s 1 normal forwards;
 }
 #index .h1 {
   grid-area: h1;
