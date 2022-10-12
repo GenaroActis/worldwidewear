@@ -646,6 +646,16 @@ table {
   width: 100vw;
   height: auto;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+#mentirita #footerPadre {
+  width: 100vw;
+  height: auto;
+}
+#mentirita #footerPadre .footer {
+  width: 100vw;
+  height: auto;
 }
 
 #ropa {

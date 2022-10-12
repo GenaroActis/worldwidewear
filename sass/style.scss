@@ -337,8 +337,15 @@ table {
 #mentirita {
 	@include mix;
 	background-color: black;
+	display:flex;
+	flex-direction: column;
+	#footerPadre {
+		@include mix;
+		.footer {
+			@include mix;
+		}
+	}
 }
-
 #ropa {
 	display: grid; 
 	background-color: black;
