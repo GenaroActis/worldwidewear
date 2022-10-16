@@ -339,6 +339,9 @@ table {
   font-family: bebas neue;
   font-style: oblique;
 }
+#index .h1 .h1Text {
+  color: black;
+}
 #index #footerPadre {
   grid-area: footerPadre;
   display: grid;
