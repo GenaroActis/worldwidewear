@@ -325,7 +325,7 @@ table {
 #index .h1 {
   grid-area: h1;
   color: rgb(255, 238, 0);
-  font-size: 40px;
+  font-size: 4vw;
   position: relative;
   align-self: center;
   text-align: center;
@@ -372,9 +372,6 @@ table {
   #index .logo {
     width: 600px;
     height: auto;
-  }
-  #index h1 {
-    font-size: 35px;
   }
 }
 @media screen and (max-width: 767px) {
