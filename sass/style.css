@@ -324,7 +324,7 @@ table {
 }
 #index .h1 {
   grid-area: h1;
-  color: black;
+  color: rgb(255, 238, 0);
   font-size: 40px;
   position: relative;
   align-self: center;
@@ -338,9 +338,6 @@ table {
   justify-items: center;
   font-family: bebas neue;
   font-style: oblique;
-}
-#index .h1 .h1Text {
-  color: black;
 }
 #index #footerPadre {
   grid-area: footerPadre;
